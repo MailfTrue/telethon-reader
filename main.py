@@ -58,8 +58,8 @@ def main():
         "proxy_type": args['proxy_type'],
         "addr": args['proxy_host'],
         "port": args['proxy_port'],
-        "user": args['proxy_username'],
-        "pass": args['proxy_password'],
+        "username": args['proxy_username'],
+        "password": args['proxy_password'],
     } if all(args[k] for k in args if k.startswith("proxy")) else None
 
     client = get_client(
